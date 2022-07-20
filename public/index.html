@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript" defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbKebGf5wqvRY-GYHuX0f3QJCClC5irT8&libraries=places&callback=initMap">
-</script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbKebGf5wqvRY-GYHuX0f3QJCClC5irT8&libraries=places&callback=initMap">
+        </script>
     <script defer src="script.js"></script>
     <title>Horizon | Sunset App</title>
 </head>
+
 <body>
     <div class="container">
         <div class="header">
@@ -39,5 +41,30 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div class="header">
+            <div class="blue">Rate image</div>
+        </div>
+        <div class="image-upload-container">
+            <form action="#">
+                <input type="file" id="imgFile" />
+                <input type="button" id="btnLoad" value="Load" />
+            </form>
+            <form action="#">
+                <input type="file" id="imageInput" accept="image/*">
+                <canvas id="myCanvas" width="1000" height="700"></canvas>
+            </form>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="content">
+            <div class="details-section">
+                <div class="detail">
+                    <div class="title">Amount of Blue</div>
+                    <div class="value" data-blue>TBD</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
